@@ -38,6 +38,7 @@ function App() {
 
   return (
     <div>
+      <CafeQR />
       <h1>Jhigu Cafe</h1>
       <h2>Items we provide here</h2>
       {items.map((item) => (
@@ -51,3 +52,7 @@ function App() {
 }
 
 export default App;
+
+function CafeQR() {
+  return <QRCodeSVG />;
+}
